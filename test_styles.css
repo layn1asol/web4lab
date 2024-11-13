@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.text1 {
+    font-size: 70px;
+    padding: 10px;
+    background: linear-gradient(-50deg, #ffbb3c, #ec3496, #7255cb, #71d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: opacity 1s ease
+}
+
+.text1.visible {
+    opacity: 1;
+}
+
+.text2 {
+    color: gray;
+    font-size: 30px;
+    opacity: 1;
+    transition: opacity 1.2s ease
+}
+
+.text2.visible {
+    opacity: 1;
+}
