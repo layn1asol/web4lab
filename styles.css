@@ -1,29 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
+    box-sizing: border-box; /* lets divs to have same size despite using padding or margin*/
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to right, #ffe9ed, #bae5ff);
     width:100%;
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
+    min-height: 100vh; /* viewport height, browser window */
 }
 
 .header {
@@ -32,7 +22,6 @@ body {
     justify-content: space-between;
     background-color: white;
     padding: 30px;
-
 }
 
 .logo {
@@ -45,7 +34,6 @@ body {
     background-color: #333;
     text-align: center;
     padding: 80px;
-    flex-shrink: 0;
 }
 
 .main {
@@ -61,14 +49,14 @@ body {
 .box-container {
     display: flex;
     justify-content: center;
-    gap: 100px 50px; /* 20px for vertical gap, 50px for horizontal gap */
+    gap: 100px 50px; /* 100px - vertical gap, 50px - horizontal gap */
     margin-top: 20px;
     margin-bottom: 60px;
     flex-wrap: wrap;
 }
 
 .box1, .box2, .box3 {
-    flex: 1 1 370px; /* shrinks to a minimum width of 300px while taking up available space */
+    flex: 1 1 370px; /* flex grow, flex shrink, shrinks to a minimum width of 370px while taking up available space */
     max-width: 400px;
     height: 500px;
     background-color: #ffffff;
@@ -84,7 +72,6 @@ body {
 .text1, .header_box1, .header_box2, .header_box3 {
     color: #ec3cff;
     font-weight: bold;
-
 }
 
 .text1 {
@@ -112,18 +99,18 @@ body {
 
 .text_box1, .text_box2, .text_box3 {
     color: gray;
-
     font-size: 20px;
     font-style: italic;
     margin-top: 20px;
     padding: 10px; /* add padding inside text boxes for additional space */
     text-align: center;
 }
+
 .menu-icon {
     display: flex;
     flex-direction: column;
     width: 30px;
-    cursor: pointer;
+    cursor: pointer; /* changes the sprite of the cursor to a pointer */
 }
 
 .menu-icon span {
@@ -134,10 +121,8 @@ body {
 }
 
 .image1, .image2, .image3 {
-    position: absolute; /* absolute positioning within box1 */
-    top: -80px; /* adjust to move it slightly out of box1 */
-    left: 50%;
-    transform: translateX(-50%); /* center horizontally */
+    position: absolute; /* absolute positioning within boxes */
+    top: -80px;
 }
 
 .image1 {

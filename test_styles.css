@@ -13,18 +13,18 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background: white;
     align-items: center;
     justify-content: center;
     width:100%;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
 }
 
 .text1 {
     font-size: 70px;
     padding: 10px;
     background: linear-gradient(-50deg, #ffbb3c, #ec3496, #7255cb, #71d4ff);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* webkit is a html/css web browser rendering engine for safari/chrome */
     -webkit-text-fill-color: transparent;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
@@ -47,8 +47,6 @@ body {
         transform: scale(1);
     }
 }
-
-
 
 @media screen and (max-width: 768px) {
     .text1 {
