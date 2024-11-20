@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* lets divs to have same size despite using padding or margin*/
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* viewport height, browser window */
+    min-height: 100vh;
 }
 
 .header {
@@ -49,14 +49,14 @@ body {
 .box-container {
     display: flex;
     justify-content: center;
-    gap: 100px 50px; /* 100px - vertical gap, 50px - horizontal gap */
+    gap: 100px 50px;
     margin-top: 20px;
     margin-bottom: 60px;
     flex-wrap: wrap;
 }
 
 .box1, .box2, .box3 {
-    flex: 1 1 370px; /* flex grow, flex shrink, shrinks to a minimum width of 370px while taking up available space */
+    flex: 1 1 370px;
     max-width: 400px;
     height: 500px;
     background-color: #ffffff;
@@ -102,7 +102,7 @@ body {
     font-size: 20px;
     font-style: italic;
     margin-top: 20px;
-    padding: 10px; /* add padding inside text boxes for additional space */
+    padding: 10px;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 30px;
-    cursor: pointer; /* changes the sprite of the cursor to a pointer */
+    cursor: pointer;
 }
 
 .menu-icon span {
@@ -121,7 +121,7 @@ body {
 }
 
 .image1, .image2, .image3 {
-    position: absolute; /* absolute positioning within boxes */
+    position: absolute;
     top: -80px;
 }
 
@@ -162,7 +162,6 @@ body {
         margin-bottom:80px;
     }
 
-    /* Add these new styles */
     .box-container {
         flex-direction: column;
         align-items: center;
