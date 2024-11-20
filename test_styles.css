@@ -24,7 +24,7 @@ body {
     font-size: 70px;
     padding: 10px;
     background: linear-gradient(-50deg, #ffbb3c, #ec3496, #7255cb, #71d4ff);
-    -webkit-background-clip: text; /* webkit is a html/css web browser rendering engine for safari/chrome */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
